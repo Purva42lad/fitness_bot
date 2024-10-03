@@ -7,7 +7,7 @@ export default function InputField({ setOutput }) {
   const getOutput = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3000/askedQuestion", {
+      const response = await fetch("https://fitness-bot-wk5n.onrender.com/askedQuestion", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
